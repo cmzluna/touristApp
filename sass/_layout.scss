@@ -1,0 +1,40 @@
+.container {
+    max-width: 100rem;
+// si tiene espacio ocupa 1200px, de lo contrario ocupa el 100% de la pantalla (para pantallas chicas)
+    margin: 8rem auto;
+    background-color: #eeeeee;
+    box-shadow: var(--shadow-dark);
+    min-height: 50rem;
+}
+
+.header {
+    font-size: 1.4rem;
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--color-gray-light);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+  
+.content {
+    display: flex;
+ /* le damos la habilidad de ocupar el espacio restante */ 
+}
+
+.sidebar {
+    
+    background-color: var(--color-grey-dark-1);
+    flex: 0 0 18%; /* grow-shrink-basis */ 
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.hotel-view {
+    background-color: rgb(228, 160, 160);
+    flex: 1;
+    height: 80rem;
+}

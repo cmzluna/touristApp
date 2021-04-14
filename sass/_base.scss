@@ -1,0 +1,70 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA2650
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+ 
+:root {
+    --color-primary: #eb2f64;
+    --color-primary-light: #FF3366;
+    --color-primary-dark: #BA2650;
+
+    --color-primary: #eb2f64;
+    --color-primary-light: #397D92;
+    --color-primary-dark: #0C2C40;
+    --color-light-1:  #F2C8A2;
+    --color-light-2: #F2935C;
+    --color-light-3: #D94032;
+
+    --color-grey-ligh-1:  #faf9f9;
+    --color-grey-light-2:  #f4f2f2;
+    --color-grey-light-3:  #f0eeee;
+    --color-grey-light-4:  #ccc;
+
+    --color-grey-dark-1:  #333;
+    --color-grey-dark-2:  #777;
+    --color-grey-dark-3:  #999;
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+box-sizing: border-box;
+font-size: 62.5%;
+// 1 rem = 10px,  10px/16px = 62.5%  
+// (16px is the browser default)
+// Sacado de natours project
+// 8. Converting px to rem An Effective Workflow
+}
+ 
+body {
+    background-color: #eb2f64;
+    font-family: 'Open Sans', sans-serif; // coming from google fonts
+    font-weight: 400;
+    background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+    color: var(--color-light-1);
+    height: 100vh;
+}
