@@ -133,6 +133,10 @@
 
     }
 
+    &__item::before {
+
+    }
+    
     &__link:link, 
     &__link:visited {
         color: var(--color-grey-light-1);
